@@ -80,7 +80,7 @@ class ThemeSettingInit
 	public function loadModuleSetting (){
 		$this->argsObjSetting[] = new AdminSettings\General;
 		$this->argsObjSetting[] = new AdminSettings\Blog;
-		$this->argsObjSetting[] = new AdminSettings\Reservation();
+		// $this->argsObjSetting[] = new AdminSettings\Reservation();
 	}
 
 	/**

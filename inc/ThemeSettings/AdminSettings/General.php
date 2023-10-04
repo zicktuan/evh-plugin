@@ -25,7 +25,7 @@ class General extends SettingFactory
 
 	public function settings(){
 	    $this->general();
-	    $this->listMail();
+	    $this->socials();
 		$this->header();
 		$this->footer();
 		return $this->fieldsSettings;
@@ -47,64 +47,55 @@ class General extends SettingFactory
                 'desc'        => ' '
             ],
             [
-                'id'          => 'awe_social_fb',
-                'label'       => __( 'Đường dẫn trang facebook', 'bookawesome' ),
+                'id'          => 'awe_phone_email',
+                'label'       => __( 'Email', 'bookawesome' ),
                 'type'        => 'text',
                 'section'     => 'general_setting',
-                'std'         => '#',
                 'desc'        => ' '
-            ],
-            [
-                'id'          => 'awe_social_ins',
-                'label'       => __( 'Đường dẫn instagram', 'bookawesome' ),
-                'type'        => 'text',
-                'section'     => 'general_setting',
-                'std'         => '#',
-                'desc'        => ' '
-            ],
-            [
-                'id'          => 'awe_social_you',
-                'label'       => __( 'Đường dẫn youtube', 'bookawesome' ),
-                'type'        => 'text',
-                'section'     => 'general_setting',
-                'std'         => '#',
-                'desc'        => ' '
-            ],
+            ]
 
         ];
         $this->setListSettings($settings);
     }
 
-    public function listMail() {
+    public function socials() {
         $settings = [
             [
-                'label'       => __( 'List Mail', 'bookawesome' ),
-                'id'          => 'list_mail',
+                'label'       => __( 'Socials', 'bookawesome' ),
+                'id'          => 'social',
                 'type'        => 'tab',
                 'section'     => 'general_setting',
             ],
             [
-                'id'          => 'awe_email_to',
-                'label'       => __( 'Email to (*)', 'bookawesome' ),
-                'type'        => 'text',
-                'section'     => 'general_setting',
-                'desc'        => ' '
+                'id'      => 'awe_social_ig',
+                'label'   => __( 'Instagram', 'bookawesome' ),
+                'type'    => 'text',
+                'section' => 'general_setting',
             ],
             [
-                'id'          => 'awe_email_cc_to',
-                'label'       => __( 'CC to', 'bookawesome' ),
-                'type'        => 'text',
-                'section'     => 'general_setting',
-                'desc'        => ' '
+                'id'      => 'awe_social_fb',
+                'label'   => __( 'Facebook', 'bookawesome' ),
+                'type'    => 'text',
+                'section' => 'general_setting',
             ],
             [
-                'id'          => 'awe_email_bcc_to',
-                'label'       => __( 'BCC to', 'bookawesome' ),
-                'type'        => 'text',
-                'section'     => 'general_setting',
-                'desc'        => ' '
+                'id'      => 'awe_social_tw',
+                'label'   => __( 'Twitter', 'bookawesome' ),
+                'type'    => 'text',
+                'section' => 'general_setting',
             ],
-
+            [
+                'id'      => 'awe_social_lin',
+                'label'   => __( 'Linkedin', 'bookawesome' ),
+                'type'    => 'text',
+                'section' => 'general_setting',
+            ],
+            [
+                'id'      => 'awe_social_youtube',
+                'label'   => __( 'Youtube', 'bookawesome' ),
+                'type'    => 'text',
+                'section' => 'general_setting',
+            ]
         ];
         $this->setListSettings($settings);
     }
@@ -124,56 +115,12 @@ class General extends SettingFactory
                 'section' => 'general_setting',
             ],
             [
-                'id'      => 'awe_header_address',
-                'label'   => __( 'Địa chỉ', 'bookawesome' ),
+                'id'      => 'awe_header_url_down',
+                'label'   => __( 'Url Download', 'bookawesome' ),
                 'type'    => 'text',
                 'section' => 'general_setting',
             ],
-            [
-                'id'      => 'awe_header_phone',
-                'label'   => __( 'Số điện thoại', 'bookawesome' ),
-                'type'    => 'text',
-                'section' => 'general_setting',
-            ],
-            [
-                'id'      => 'awe_header_time',
-                'label'   => __( 'Thời gian làm việc', 'bookawesome' ),
-                'type'    => 'text',
-                'std'     => '10:00 am - 11:00 pm',
-                'section' => 'general_setting',
-            ],
-            [
-                'id'      => 'awe_header_desc',
-                'label'   => __( 'Mô tả ngắn banner', 'bookawesome' ),
-                'type'    => 'textarea-simple',
-                'section' => 'general_setting',
-            ],
-            [
-                'id'      => 'awe_header_btn_menu',
-                'label'   => __( 'Button menu', 'bookawesome' ),
-                'type'    => 'text',
-                'std'     => 'Thực đơn',
-                'section' => 'general_setting',
-            ],
-            [
-                'id'      => 'awe_header_link_menu',
-                'label'   => __( 'Link menu', 'bookawesome' ),
-                'type'    => 'text',
-                'section' => 'general_setting',
-            ],
-            [
-                'id'      => 'awe_header_btn_reservation',
-                'label'   => __( 'Button reservation', 'bookawesome' ),
-                'type'    => 'text',
-                'std'     => 'Đặt bàn',
-                'section' => 'general_setting',
-            ],
-            [
-                'id'      => 'awe_header_link_reservation',
-                'label'   => __( 'Link reservation', 'bookawesome' ),
-                'type'    => 'text',
-                'section' => 'general_setting',
-            ],
+            
         ];
         $this->setListSettings($settings);
     }
@@ -185,6 +132,30 @@ class General extends SettingFactory
                 'id'          => 'footer',
                 'type'        => 'tab',
                 'section'     => 'general_setting',
+            ],
+            [
+                'id'      => 'awe_footer_logo',
+                'label'   => __( 'Logo', 'bookawesome' ),
+                'type'    => 'upload',
+                'section' => 'general_setting',
+            ],
+            [
+                'id'      => 'awe_footer_address',
+                'label'   => __('Address', 'bookawesome'),
+                'type'    => 'text',
+                'section' => 'general_setting',
+            ],
+            [
+                'id'      => 'awe_footer_down_apple_store',
+                'label'   => __( 'Url Apple Store', 'bookawesome' ),
+                'type'    => 'text',
+                'section' => 'blog_setting',
+            ],
+            [
+                'id'      => 'awe_footer_down_gg_play',
+                'label'   => __( 'Url GooglePlay', 'bookawesome' ),
+                'type'    => 'text',
+                'section' => 'blog_setting',
             ],
             [
                 'id'      => 'awe_footer_copyright',

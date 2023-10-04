@@ -45,11 +45,11 @@
          */
         public function map() {
             $params = array(
-                array(
-                    'type'       => 'attach_image',
-                    'param_name' => 'evh_infor_bg',
-                    'heading'    => esc_html__('Background', 'bookawesome')
-                ),
+                // array(
+                //     'type'       => 'attach_image',
+                //     'param_name' => 'evh_infor_bg',
+                //     'heading'    => esc_html__('Background', 'bookawesome')
+                // ),
                 array(
                     "type" => "textfield",
                     "heading" => __( "Title", "bookawesome" ),
@@ -72,6 +72,11 @@
                     "heading" => __( "Text Button", "bookawesome" ),
                     "param_name" => "evh_infor_text_btn",
                     "value" => "Ứng Tuyển Ngay",
+                ),
+                array(
+                    "type" => "textfield",
+                    "heading" => __( "Link Ứng Tuyển", "bookawesome" ),
+                    "param_name" => "evh_infor_url_btn",
                 ),
                 array(
                     "type" => "textfield",

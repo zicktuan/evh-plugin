@@ -58,54 +58,64 @@
                     'heading'    => esc_html__('Image', 'bookawesome')
                 ),
                 array(
-                    "type" => "textarea",
-                    "heading" => __( "Description", "bookawesome" ),
-                    "param_name" => "evh_process_desc",
-                ),
-                array(
-                    'type'       => 'param_group',
-                    'param_name' => 'items',
-                    'heading'    => esc_html__( 'Items', 'bookawesome' ),
-                    'params'     => array(
-                        array(
-                            'type'       => 'attach_image',
-                            'param_name' => 'icon',
-                            'heading'    => esc_html__('Icon', 'bookawesome')
-                        ),
-                        array(
-                            'type'       => 'textfield',
-                            'param_name' => 'title',
-                            'heading'    => esc_html__('Title', 'bookawesome')
-                        )
-                    )
-                ),
-                array(
-                    'type'       => 'param_group',
-                    'param_name' => 'items2',
-                    'heading'    => esc_html__( 'Items', 'bookawesome' ),
-                    'params'     => array(
-                        array(
-                            'type'       => 'attach_image',
-                            'param_name' => 'icon',
-                            'heading'    => esc_html__('Icon', 'bookawesome')
-                        ),
-                        array(
-                            'type'       => 'textfield',
-                            'param_name' => 'title',
-                            'heading'    => esc_html__('Title', 'bookawesome')
-                        )
-                    )
+                    "type" => "textfield",
+                    "heading" => __( "Url App Store", "bookawesome" ),
+                    "param_name" => "evh_about_app_store",
                 ),
                 array(
                     "type" => "textfield",
-                    "heading" => __( "Url Download Apple Store", "bookawesome" ),
-                    "param_name" => "evh_about_download_apple",
+                    "heading" => __( "Url Google Play", "bookawesome" ),
+                    "param_name" => "evh_about_gg_play",
                 ),
-                array(
-                    "type" => "textfield",
-                    "heading" => __( "Url Download Googles Play", "bookawesome" ),
-                    "param_name" => "evh_about_download_gg_play",
-                ),
+                // array(
+                //     "type" => "textarea",
+                //     "heading" => __( "Description", "bookawesome" ),
+                //     "param_name" => "evh_process_desc",
+                // ),
+                // array(
+                //     'type'       => 'param_group',
+                //     'param_name' => 'items',
+                //     'heading'    => esc_html__( 'Items', 'bookawesome' ),
+                //     'params'     => array(
+                //         array(
+                //             'type'       => 'attach_image',
+                //             'param_name' => 'icon',
+                //             'heading'    => esc_html__('Icon', 'bookawesome')
+                //         ),
+                //         array(
+                //             'type'       => 'textfield',
+                //             'param_name' => 'title',
+                //             'heading'    => esc_html__('Title', 'bookawesome')
+                //         )
+                //     )
+                // ),
+                // array(
+                //     'type'       => 'param_group',
+                //     'param_name' => 'items2',
+                //     'heading'    => esc_html__( 'Items', 'bookawesome' ),
+                //     'params'     => array(
+                //         array(
+                //             'type'       => 'attach_image',
+                //             'param_name' => 'icon',
+                //             'heading'    => esc_html__('Icon', 'bookawesome')
+                //         ),
+                //         array(
+                //             'type'       => 'textfield',
+                //             'param_name' => 'title',
+                //             'heading'    => esc_html__('Title', 'bookawesome')
+                //         )
+                //     )
+                // ),
+                // array(
+                //     "type" => "textfield",
+                //     "heading" => __( "Url Download Apple Store", "bookawesome" ),
+                //     "param_name" => "evh_about_download_apple",
+                // ),
+                // array(
+                //     "type" => "textfield",
+                //     "heading" => __( "Url Download Googles Play", "bookawesome" ),
+                //     "param_name" => "evh_about_download_gg_play",
+                // ),
 
             );
 

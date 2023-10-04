@@ -16,9 +16,9 @@ use MyPlugin\PostType\MetaBox\Page\PageMetaBox;
 class PostTypeInit {
 
 	public function __construct(){
-        add_action( 'add_meta_boxes', array(new PostMetaBox($this), 'register') );
-        add_action( 'add_meta_boxes', array(new PostGalleryMetaBox($this), 'register') );
-        add_action( 'add_meta_boxes', array(new PageMetaBox($this), 'register') );
+        // add_action( 'add_meta_boxes', array(new PostMetaBox($this), 'register') );
+        // add_action( 'add_meta_boxes', array(new PostGalleryMetaBox($this), 'register') );
+        // add_action( 'add_meta_boxes', array(new PageMetaBox($this), 'register') );
 //        new BookTablePostType();
 	}
 

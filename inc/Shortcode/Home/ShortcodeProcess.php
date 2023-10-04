@@ -64,8 +64,8 @@
                     'params'     => array(
                         array(
                             'type'       => 'attach_image',
-                            'param_name' => 'bg',
-                            'heading'    => esc_html__('Background', 'bookawesome')
+                            'param_name' => 'img',
+                            'heading'    => esc_html__('Image', 'bookawesome')
                         ),
                         array(
                             'type'       => 'textfield',
@@ -75,7 +75,7 @@
                         array(
                             'type'       => 'textarea',
                             'param_name' => 'desc',
-                            'heading'    => esc_html__('Description', 'bookawesome')
+                            'heading'    => esc_html__('Desc', 'bookawesome')
                         )
                     )
                 ),

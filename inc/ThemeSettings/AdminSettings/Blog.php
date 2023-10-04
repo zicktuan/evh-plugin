@@ -27,7 +27,6 @@ class Blog extends SettingFactory
     public function settings()
     {
         $this->Blog();
-        $this->SingleBlog();
         return $this->fieldsSettings;
     }
 
@@ -41,30 +40,32 @@ class Blog extends SettingFactory
                 'section'     => 'blog_setting',
             ],
             [
-                'id'          => 'awe_config_show_blog',
-                'label'       => __( 'Chế Độ Hiển Thị', 'bookawesome' ),
-                'type'        => 'select',
-                'section'     => 'blog_setting',
-                'choices'	  => [
-                    ['value' => '0', 'label' => __( 'No Sidebar', 'bookawesome' )],
-                    ['value' => '1', 'label' => __( 'Sidebar', 'bookawesome' )],
-                ]
-            ],
-            [
-                'id'      => 'blog_bg',
-                'label'   => __('Background', 'bookawesome'),
-                'type'    => 'upload',
-                'section' => 'blog_setting',
-            ],
-            [
                 'id'      => 'blog_header_title_bg',
-                'label'   => __( 'Header Title Background', 'bookawesome' ),
+                'label'   => __( 'Title', 'bookawesome' ),
                 'type'    => 'text',
                 'section' => 'blog_setting',
             ],
             [
-                'id'      => 'blog_header_sub_title_bg',
-                'label'   => __( 'Sub Title Background', 'bookawesome' ),
+                'id'      => 'blog_header_content',
+                'label'   => __( 'Content', 'bookawesome' ),
+                'type'    => 'text',
+                'section' => 'blog_setting',
+            ],
+            [
+                'id'      => 'blog_header_short_content',
+                'label'   => __( 'Short Desc', 'bookawesome' ),
+                'type'    => 'text',
+                'section' => 'blog_setting',
+            ],
+            [
+                'id'      => 'blog_down_apple_store',
+                'label'   => __( 'Url Apple Store', 'bookawesome' ),
+                'type'    => 'text',
+                'section' => 'blog_setting',
+            ],
+            [
+                'id'      => 'blog_down_gg_play',
+                'label'   => __( 'Url GooglePlay', 'bookawesome' ),
                 'type'    => 'text',
                 'section' => 'blog_setting',
             ],
@@ -72,33 +73,5 @@ class Blog extends SettingFactory
         $this->setListSettings($setting);
     }
 
-    public function SingleBlog() {
-        $setting = [
-            [
-                'label'       => __( 'Single Blog', 'bookawesome' ),
-                'id'          => 'single-blog',
-                'type'        => 'tab',
-                'section'     => 'blog_setting',
-            ],
-            [
-                'id'      => 'single_blog_bg',
-                'label'   => __('Background', 'bookawesome'),
-                'type'    => 'upload',
-                'section' => 'blog_setting',
-            ],
-            [
-                'id'      => 'single_blog_header_title_bg',
-                'label'   => __( 'Header Title Background', 'bookawesome' ),
-                'type'    => 'text',
-                'section' => 'blog_setting',
-            ],
-            [
-                'id'      => 'single_blog_header_sub_title_bg',
-                'label'   => __( 'Sub Title Background', 'bookawesome' ),
-                'type'    => 'text',
-                'section' => 'blog_setting',
-            ],
-        ];
-        $this->setListSettings($setting);
-    }
+    
 }

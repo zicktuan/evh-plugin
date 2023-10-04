@@ -46,9 +46,34 @@
         public function map() {
             $params = array(
                 array(
+                    "type" => "textfield",
+                    "heading" => __( "Title", "bookawesome" ),
+                    "param_name" => "awe_home_title",
+                ),
+                array(
+                    "type" => "textfield",
+                    "heading" => __( "Sub Title", "bookawesome" ),
+                    "param_name" => "awe_home_sub_title",
+                ),
+                array(
+                    'type'       => 'textarea',
+                    'param_name' => 'awe_home_desc',
+                    'heading'    => esc_html__('Description', 'bookawesome')
+                ),
+                array(
                     'type'       => 'attach_image',
                     'param_name' => 'awe_home_img',
                     'heading'    => esc_html__('Image', 'bookawesome')
+                ),
+                array(
+                    "type" => "textfield",
+                    "heading" => __( "Url App Store", "bookawesome" ),
+                    "param_name" => "awe_home_app_store",
+                ),
+                array(
+                    "type" => "textfield",
+                    "heading" => __( "Url Google Play", "bookawesome" ),
+                    "param_name" => "awe_home_gg_play",
                 ),
 
             );

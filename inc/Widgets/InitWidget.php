@@ -22,11 +22,11 @@ class InitWidget
 	 */
 	public function includeTemplate() {
 //		register_widget('MyPlugin\Widgets\WidgetCategory' );
-		register_widget('MyPlugin\Widgets\WidgetRecentPost' );
-		register_widget('MyPlugin\Widgets\WidgetsFooterSocial' );
-		register_widget('MyPlugin\Widgets\WidgetFooterAddress' );
-		register_widget('MyPlugin\Widgets\WidgetSearch' );
-		register_widget('MyPlugin\Widgets\WidgetCategory' );
+		// register_widget('MyPlugin\Widgets\WidgetRecentPost' );
+		// register_widget('MyPlugin\Widgets\WidgetsFooterSocial' );
+		// register_widget('MyPlugin\Widgets\WidgetFooterAddress' );
+		// register_widget('MyPlugin\Widgets\WidgetSearch' );
+		// register_widget('MyPlugin\Widgets\WidgetCategory' );
 	}
 
 	// import file javascript

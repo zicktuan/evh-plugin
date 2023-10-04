@@ -1,12 +1,14 @@
 <?php
 namespace MyPlugin\Shortcode;
 
-use MyPlugin\Shortcode\ShortcodeAbout;
-use MyPlugin\Shortcode\ShortcodeFeedBack;
-use MyPlugin\Shortcode\ShortcodeEvents;
-//use MyPlugin\Shortcode\ShortcodeLatestPosts;
-
-use MyPlugin\Shortcode\ShortcodeFreshlyTaste;
+use MyPlugin\Shortcode\Home\ShortcodeBanner;
+use MyPlugin\Shortcode\Home\ShortcodeAbout;
+use MyPlugin\Shortcode\Home\ShortcodeProcess;
+use MyPlugin\Shortcode\Home\ShortcodeSystemHospital;
+use MyPlugin\Shortcode\Home\ShortcodeTeam;
+use MyPlugin\Shortcode\Home\ShortcodeInfor;
+use MyPlugin\Shortcode\Home\ShortcodeContact;
+use MyPlugin\Shortcode\Home\ShortcodePost;
 
 /**
  * @author lookawesome team
@@ -23,7 +25,14 @@ class ShortcodeInit
 
 	public function includeTemplate() {
 //		new ShortcodeLatestPosts($this);
-
+		new ShortcodeBanner($this);
+		new ShortcodeAbout($this);
+		new ShortcodeProcess($this);
+		new ShortcodeSystemHospital($this);
+		new ShortcodeTeam($this);
+		new ShortcodeInfor($this);
+		new ShortcodeContact($this);
+		new ShortcodePost($this);
 	}
 
 	/**

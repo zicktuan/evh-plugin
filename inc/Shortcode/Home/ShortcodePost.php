@@ -1,5 +1,7 @@
 <?php
-namespace MyPlugin\Shortcode;
+namespace MyPlugin\Shortcode\Home;
+
+use MyPlugin\Shortcode\AbstractShortcode;
 
 class ShortcodePost extends AbstractShortcode
 {
